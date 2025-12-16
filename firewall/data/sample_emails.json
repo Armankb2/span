@@ -1,0 +1,29 @@
+[
+    {
+      "text": "URGENT! Your PayPal account suspended. Verify: http://paypa1-verify.tk/login",
+      "urls": ["http://paypa1-verify.tk/login"],
+      "metadata": {
+        "from": "security@paypal-alert.ml",
+        "subject": "URGENT: Verify NOW!!!",
+        "timestamp": "2025-01-15 02:30:00",
+        "received_spf": "fail",
+        "dkim": "none",
+        "dmarc": "none",
+        "relay_hops": 7
+      }
+    },
+    {
+      "text": "Your package is ready. Track: https://www.fedex.com/track/12345",
+      "urls": ["https://www.fedex.com/track/12345"],
+      "metadata": {
+        "from": "tracking@fedex.com",
+        "subject": "Package delivery",
+        "timestamp": "2025-01-15 10:00:00",
+        "received_spf": "pass",
+        "dkim": "pass",
+        "dmarc": "pass",
+        "relay_hops": 2
+      }
+    }
+  ]
+  

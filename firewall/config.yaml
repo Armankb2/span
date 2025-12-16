@@ -1,0 +1,97 @@
+weights:
+  email_text: 0.4
+  url_analysis: 0.35
+  metadata: 0.25
+
+thresholds:
+  high_risk: 75
+  medium_risk: 50
+  low_risk: 25
+
+email_analysis:
+  max_length: 10000
+  min_length: 10
+  phishing_keywords:
+    - "verify your account"
+    - "urgent action required"
+    - "suspended account"
+    - "confirm your identity"
+    - "click here"
+    - "reset your password"
+    - "unusual activity"
+    - "security alert"
+    - "account will be closed"
+    - "confirm now"
+
+url_analysis:
+  max_urls: 50
+  suspicious_tlds:
+    - ".tk"
+    - ".ml"
+    - ".ga"
+    - ".cf"
+    - ".gq"
+  url_shorteners:
+    - "bit.ly"
+    - "tinyurl.com"
+    - "goo.gl"
+    - "t.co"
+    - "ow.ly"
+
+metadata_analysis:
+  check_spf: true
+  check_dkim: true
+  check_dmarc: true
+  suspicious_hours:
+    start: 23
+    end: 6
+
+    
+weights:
+  email_text: 0.3
+  url_analysis: 0.25
+  metadata: 0.2
+  ml_prediction: 0.25
+
+thresholds:
+  high_risk: 75
+  medium_risk: 50
+  low_risk: 25
+
+email_analysis:
+  max_length: 10000
+  min_length: 10
+  phishing_keywords:
+    - "verify your account"
+    - "urgent action required"
+    - "suspended account"
+    - "confirm your identity"
+    - "click here"
+    - "reset your password"
+    - "unusual activity"
+    - "security alert"
+    - "account will be closed"
+    - "confirm now"
+
+url_analysis:
+  max_urls: 50
+  suspicious_tlds:
+    - ".tk"
+    - ".ml"
+    - ".ga"
+    - ".cf"
+    - ".gq"
+  url_shorteners:
+    - "bit.ly"
+    - "tinyurl.com"
+    - "goo.gl"
+    - "t.co"
+    - "ow.ly"
+
+metadata_analysis:
+  check_spf: true
+  check_dkim: true
+  check_dmarc: true
+  suspicious_hours:
+    start: 23
+    end: 6

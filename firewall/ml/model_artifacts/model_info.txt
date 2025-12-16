@@ -1,0 +1,2 @@
+trained_on: config\data\synthetic_train.csv
+n_train: 1400
