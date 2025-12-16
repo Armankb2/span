@@ -10,11 +10,7 @@ import tempfile
 # -------------------------------------------------
 # Page Config
 # -------------------------------------------------
-st.set_page_config(
-    page_title="AI Phishing Defense Firewall",
-    page_icon="🛡️",
-    layout="wide"
-)
+demo
 
 # -------------------------------------------------
 # Load Firewall (cached)
@@ -202,3 +198,4 @@ if st.session_state.history:
     st.subheader("🕒 Session Analysis History")
     for i, h in enumerate(st.session_state.history[::-1][:5], 1):
         st.write(f"{i}. Score: {h['final_score']} | Threat: {h['threat_level']} | Action: {h['action']}")
+
